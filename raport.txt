@@ -1,0 +1,6 @@
+.zip	1
+.desktop	1
+.py	2
+.png	5
+.txt	1
+.sublime-package	50
