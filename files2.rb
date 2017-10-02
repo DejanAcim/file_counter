@@ -9,3 +9,6 @@ values = rows.map { |r| r.last }.join(",")
 labels = rows.map { |r| r.first }.join("|")
 
 url = "https://chart.googleapis.com/chart?cht=p&chds=a&chs=600x350&chl=#{labels}&chd=t:#{values}"
+
+image_content = open(url).read
+File.open("raport.png", "w") { |f| f.write(image_content) }
